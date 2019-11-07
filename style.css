@@ -1,0 +1,82 @@
+
+body, div, p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
+body {
+  font-family: sans-serif;
+  background-color: mintcream;
+}
+
+#toplevel {
+    width: 800px;;
+    margin: 0 auto; 
+}
+
+#tbl-container {
+  float: right;
+}
+
+.tbl-container__info-panel {
+  float: left;
+}
+.tbl-container__result-container {
+  margin: 10px 0;
+}
+
+.clearfix::after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-left: 140px;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+h1 { text-align: center; }
+
+body > p { margin: 20px auto; text-align: center; }
+
+#cyclefrom, #cycleto {
+    width: 30px;
+}
+
+#settings {
+    float: left;
+    margin-left: 50px;
+}
+#settings table {
+    margin: 0;
+}
+
+#settings table th {
+    background-color: bisque;
+}
+
+#settings table td {
+    padding: 7px 5px;
+    border: none;
+}
+
+#settings table tr:last-child {
+    border: 1px solid black;
+}
+
+.label {
+    width: 120px;
+    background-color: beige;
+}
+
+.numberfld input {
+    width: 50px;
+}
+
+.numberfld {
+    background-color: beige;
+}

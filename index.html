@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head>
+  <meta charset='utf-8'></meta>
+  <title>Алгоритм улитки</title>
+  <link rel='stylesheet' href='./style.css'>
+  <script src='snailwalker.js'></script>
+  <script src='index.js'></script>
+</head><body>
+
+  <h1>Алгоритм улитки &ndash; демо</h1>
+  <p>Параметры можно изменить в объекте <code>settings</code> в файле <code>index.js</code></p>
+  <div id='toplevel' class='clearfix'>
+    <div id='settings'>
+      <form action='#' method='post'>
+      <table>
+        <tr><th colspan='2'>Параметры алгоритма</th></tr>
+        <tr>
+          <td colspan='2'>Направление движения</td>
+        </tr>
+        <tr>
+          <td colspan='2'>
+            <label><input type='radio' name='direction' value='outside' checked>Наружу</label>
+            <label><input type='radio' name='direction' value='inside'>Внуть</label>
+          </td>
+        </tr>
+
+
+        <tr><td class='label'><label for='cols'>Число столбцов</label></td><td class='numberfld'><input type='text' name='cols' value='7'></td></tr>
+        <tr><td class='label'><label for='rows'>Число строк</label></td><td class='numberfld'><input type='text' name='rows' value='7'></td></tr>
+
+        <tr><th colspan='2'>Параметры цикла</th></tr>
+
+        <tr>
+          <td colspan='2'>Фиксированная величина</td>
+        </tr>
+        <tr>
+          <td colspan='2'>
+            <label><input type='radio' name='fixedvar' value='width' checked>Ширина</label>
+            <label><input type='radio' name='fixedvar' value='height'>Высота</label>
+          </td>
+        </tr>
+        <tr>
+          <td class='label'><label for='fixedvarval'>Значение фиксированной величины</label></td>
+          <td class='numberfld' ><input type='text' name='fixedvarval' value='7'></td>
+        </tr>
+        <tr>
+          <td colspan='2'>Интервал цикла</td>
+        </tr>
+        <tr>
+          <td colspan='2'>
+            <label>от&nbsp;<input id='cyclefrom' type='text' name='cyclefrom' value='2'></label>
+            &nbsp;
+            <label>до&nbsp;<input id='cycleto' type='text' name='cycleto' value='7'></label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan='2'>
+            <input type='reset'>
+            <input type='submit' value='Применить'>
+          </td>
+        </tr>
+      </table>
+      </form>
+    </div>
+    <div id='tbl-container'></div>
+  </div> <!-- .toplevel.clearfix -->
+
+</body></html>
